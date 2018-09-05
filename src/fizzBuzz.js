@@ -8,10 +8,7 @@ function whizz(number) {
     return (number ? number % 7 === 0 : null) ? 'Whizz' : null;
 }
 function concat(number) {
-    let fizzString = fizz(number);
-    let buzzString = buzz(number);
-    let whizzString = whizz(number);
-    return [fizzString, buzzString, whizzString].join('');
+    return [fizz(number), buzz(number), whizz(number)].join('');
 }
 function fizzBuzz(number) {
     return concat(number);
