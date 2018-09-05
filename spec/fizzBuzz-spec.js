@@ -29,4 +29,10 @@ describe('Fizz Buzz Whizz', function () {
 
         });
     });
+
+    describe('When do not need say', function () {
+        it('should return number when number is not match', function () {
+            expect(fizzBuzz(11)).toBe(11);
+        });
+    });
 });
